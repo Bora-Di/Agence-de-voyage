@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ffc559;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.home.HomeController">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="-10.0" layoutY="-7.0" prefHeight="315.0" prefWidth="1239.0" style="-fx-background-color: #272262;">
+         <children>
+            <ImageView fitHeight="138.0" fitWidth="181.0" layoutX="971.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logo3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="940.0" layoutY="183.0" prefHeight="62.0" prefWidth="260.0" text="RifVoyage" textFill="#ffb512">
+               <font>
+                  <Font name="Bauhaus 93" size="54.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6657894849777222" green="0.030823586508631706" blue="0.35888928174972534" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="1200.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/x.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.928947389125824" green="0.14278265833854675" blue="0.8503308892250061" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label layoutX="1211.0" layoutY="13.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="logout" layoutX="1049.0" layoutY="265.0" mnemonicParsing="false" onAction="#actionLogout" onMouseClicked="#handleClose" prefHeight="34.0" prefWidth="167.0" style="-fx-background-color: #272262;" text="     Déconnexion" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="1046.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/log-out.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="605.0" layoutY="125.0" prefHeight="162.0" prefWidth="264.0" style="-fx-background-color: #ffc559; -fx-background-radius: 10px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color green="0.8333333134651184" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Label layoutX="28.0" layoutY="52.0" prefHeight="112.0" prefWidth="221.0" text=" 0004" textFill="WHITE">
+                     <font>
+                        <Font size="74.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Button fx:id="active" layoutX="1.0" layoutY="9.0" mnemonicParsing="false" onAction="#des" style="-fx-background-color: #ffc559;" text="Destinations actives">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="319.0" layoutY="125.0" prefHeight="162.0" prefWidth="264.0" style="-fx-background-color: #ffc559; -fx-background-radius: 10px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color green="0.8333333134651184" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Label layoutX="31.0" layoutY="53.0" prefHeight="112.0" prefWidth="221.0" text=" 0001" textFill="WHITE">
+                     <font>
+                        <Font size="74.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Button fx:id="client" layoutX="9.0" layoutY="9.0" mnemonicParsing="false" onAction="#cli" prefHeight="51.0" prefWidth="248.0" style="-fx-background-color: #ffc559;" text="N° total de clients">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="35.0" layoutY="125.0" prefHeight="162.0" prefWidth="264.0" style="-fx-background-color: #ffc559; -fx-background-radius: 10px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color green="0.8333333134651184" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Label layoutX="32.0" layoutY="51.0" prefHeight="112.0" prefWidth="221.0" text="0050€" textFill="WHITE">
+                     <font>
+                        <Font size="74.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Button fx:id="profit" layoutX="25.0" layoutY="9.0" mnemonicParsing="false" onAction="#prof" prefHeight="51.0" prefWidth="221.0" style="-fx-background-color: #ffc559;" text="Totale de gains">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Label layoutX="94.0" layoutY="25.0" text="A D M I N  D A S H B O A R D" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="0.1491834819316864" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="22.0" layoutY="333.0" prefHeight="349.0" prefWidth="756.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label layoutX="28.0" layoutY="165.0" text="CLIENT" textFill="#aeacac">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="238.0" text="LOCATION" textFill="#aeacac">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="165.0" text="CLIENT PAYE" textFill="#aeacac">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="238.0" text="DESTINATION" textFill="#aeacac">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="196.0" text="Ilyass Chakri" textFill="#4d4c4c">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="264.0" layoutY="196.0" text="50,00€" textFill="#4d4c4c">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="264.0" layoutY="268.0" text="Al hoceima " textFill="#4d4c4c">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="268.0" text="Agadir" textFill="#4d4c4c">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="490.0" layoutY="38.0" text="Date d'inscription" textFill="#3a1c9d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="515.0" layoutY="59.0" text="12" textFill="#aeacac">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="564.0" layoutY="67.0" text="JAN" textFill="#3a1c9d" />
+            <Label layoutX="564.0" layoutY="85.0" text="2021" textFill="#aeacac" />
+            <Separator layoutX="607.0" layoutY="30.0" orientation="VERTICAL" prefHeight="64.0" prefWidth="0.0" />
+            <Label layoutX="626.0" layoutY="38.0" text="Date souhaitée" textFill="#3a1c9d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="626.0" layoutY="58.0" text="25" textFill="#aeacac">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="675.0" layoutY="66.0" text="AVR" textFill="#3a1c9d" />
+            <Label layoutX="674.0" layoutY="85.0" text="2021" textFill="#aeacac" />
+            <Separator layoutX="41.0" layoutY="124.0" prefHeight="0.0" prefWidth="652.0" />
+            <Label layoutX="122.0" layoutY="44.0" text="Nouvel ordre" textFill="#3a1c9d">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="122.0" layoutY="77.0" text="Réf: 20178" textFill="#b2b0b0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="81.0" layoutX="41.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/avatar4.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="499.0" layoutY="165.0" text="N° DE PERSONNES" textFill="#aeacac">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="499.0" layoutY="238.0" text="TYPE DE CHAMBRE" textFill="#aeacac">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="507.0" layoutY="196.0" text="1 personne" textFill="#4d4c4c">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="507.0" layoutY="268.0" text="chambre individuelle" textFill="#4d4c4c">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="796.0" layoutY="456.0" prefHeight="104.0" prefWidth="407.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="300.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/avatar1.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="8.0" text="Admin 02:" textFill="#aeacac">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="54.0" text="HOUMAIDI Bouchra" textFill="#4d4c4c">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="796.0" layoutY="335.0" prefHeight="104.0" prefWidth="407.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="300.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/avatar3.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="14.0" text="Admin 01:" textFill="#aeacac">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="60.0" text="BENDAHOU Aâdila" textFill="#4d4c4c">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="796.0" layoutY="579.0" prefHeight="104.0" prefWidth="407.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="300.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/avatar2.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="7.0" text="Admin 03:" textFill="#aeacac">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="53.0" text="BENTOUHAMI Salma" textFill="#4d4c4c">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

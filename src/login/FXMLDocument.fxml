@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #272262;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FXMLDocumentController">
+   <children>
+      <AnchorPane layoutX="365.0" prefHeight="550.0" prefWidth="488.0" style="-fx-background-color: #f3bd50;">
+         <children>
+            <TextField fx:id="Username" layoutX="95.0" layoutY="163.0" prefHeight="42.0" prefWidth="298.0" promptText="Nom d'utilisateur" />
+            <PasswordField fx:id="Password" layoutX="95.0" layoutY="240.0" prefHeight="42.0" prefWidth="298.0" promptText="Mot de passe" />
+            <Button fx:id="log" layoutX="265.0" layoutY="326.0" mnemonicParsing="false" onAction="#ActionLogin" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #272262;" text="Se Connecter" textFill="WHITE">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.929411768913269" green="0.07450980693101883" blue="0.7607843279838562" opacity="0.800000011920929" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="141.0" layoutY="67.0" prefHeight="55.0" prefWidth="190.0" text="Connexion">
+               <font>
+                  <Font name="Century" size="38.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="mdp" layoutX="95.0" layoutY="327.0" onAction="#LinkForget" prefHeight="23.0" prefWidth="164.0" text="Mot de passe oublié" />
+            <Button fx:id="sup" layoutX="99.0" layoutY="399.0" mnemonicParsing="false" onAction="#ActionSignup" prefHeight="26.0" prefWidth="290.0" style="-fx-background-color: #272262;" text="Nouveau voyageur? Commencer ici." textFill="WHITE">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.929411768913269" green="0.07450980693101883" blue="0.7607843279838562" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="452.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/x.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8868421316146851" green="0.14944931864738464" blue="0.49356594681739807" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label layoutX="463.0" layoutY="2.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="message" layoutX="99.0" layoutY="445.0" prefHeight="42.0" prefWidth="290.0" textFill="#ff1447">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="197.0" fitWidth="228.0" layoutX="65.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bag0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="113.0" prefHeight="86.0" prefWidth="221.0" text=" RifVoyage" textFill="#ffb512">
+         <font>
+            <Font name="Bauhaus 93" size="44.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6657894849777222" green="0.030823586508631706" blue="0.35888928174972534" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

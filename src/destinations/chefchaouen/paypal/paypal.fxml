@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #272262;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="destinations.chefchaouen.paypal.PaypalController">
+    <stylesheets>
+        <URL value="@paypal.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="814.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/x.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.8868421316146851" green="0.14944931864738464" blue="0.49356594681739807" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Label layoutX="825.0" layoutY="2.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <WebView fx:id="webvview" layoutY="86.0" prefHeight="470.0" prefWidth="850.0" />
+      <Label layoutX="85.0" layoutY="-21.0" prefHeight="131.0" prefWidth="295.0" text="RifVoyage" textFill="#ffb512">
+         <font>
+            <Font name="Bauhaus 93" size="55.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6657894849777222" green="0.030823586508631706" blue="0.35888928174972534" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #f3bd50;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="340.0" style="-fx-background-color: #272262;">
+         <children>
+            <Label layoutX="57.0" layoutY="148.0" prefHeight="86.0" prefWidth="223.0" text=" RifVoyage" textFill="#ffb512">
+               <font>
+                  <Font name="Bauhaus 93" size="44.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6657894849777222" green="0.030823586508631706" blue="0.35888928174972534" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <ImageView fitHeight="138.0" fitWidth="181.0" layoutX="83.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo3.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="accueil" layoutX="1.0" layoutY="261.0" mnemonicParsing="false" onAction="#home" prefHeight="65.0" prefWidth="340.0" style="-fx-background-color: #272262;" text="A C C U E I L" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="apropos" layoutX="1.0" layoutY="346.0" mnemonicParsing="false" onAction="#apros" prefHeight="65.0" prefWidth="340.0" style="-fx-background-color: #272262;" text="A  P R O P O S" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="contact" layoutY="432.0" mnemonicParsing="false" onAction="#cont" prefHeight="65.0" prefWidth="340.0" style="-fx-background-color: #272262;" text="C O N T A C T" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="deconnexion" layoutY="517.0" mnemonicParsing="false" onAction="#logout" prefHeight="65.0" prefWidth="340.0" style="-fx-background-color: #272262;" text="      D E C O N N E X I O N" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="57.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/log-out.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="1160.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/x.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.8868421316146851" green="0.14944931864738464" blue="0.49356594681739807" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Label layoutX="1172.0" layoutY="7.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="538.0" layoutY="4.0" text="D E S T I N A T I O N S" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6184210777282715" green="0.11223196983337402" blue="0.034356724470853806" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Pane layoutX="386.0" layoutY="139.0" prefHeight="200.0" prefWidth="315.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+         <children>
+            <Pane layoutX="-17.0" layoutY="163.0" prefHeight="53.0" prefWidth="347.0" style="-fx-background-color: #272262; -fx-background-radius: 10px;">
+               <children>
+                  <Button fx:id="res1" layoutX="2.0" mnemonicParsing="false" onAction="#rese" prefHeight="51.0" prefWidth="125.0" style="-fx-background-color: #272262;" text="Réserver" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="info1" layoutX="188.0" mnemonicParsing="false" onAction="#infos" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: #272262;" text="Plus d'info" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="255.0" layoutX="37.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/home1.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="19.0" layoutY="122.0" prefHeight="32.0" prefWidth="285.0" text="50€/Nuit          Ville Al hoceima">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="0.013888888992369175" blue="0.605555534362793" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="386.0" layoutY="443.0" prefHeight="200.0" prefWidth="315.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+         <children>
+            <Pane layoutX="-17.0" layoutY="163.0" prefHeight="53.0" prefWidth="347.0" style="-fx-background-color: #272262; -fx-background-radius: 10px;">
+               <children>
+                  <Button fx:id="res3" layoutX="2.0" mnemonicParsing="false" onAction="#rese3" prefHeight="51.0" prefWidth="125.0" style="-fx-background-color: #272262;" text="Réserver" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="info3" layoutX="188.0" mnemonicParsing="false" onAction="#infos3" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: #272262;" text="Plus d'info" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="236.0" layoutX="43.0" layoutY="-33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/2d.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="19.0" layoutY="122.0" prefHeight="32.0" prefWidth="285.0" text="50€/Nuit        Ville Chefchaouen">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="0.013888888992369175" blue="0.605555534362793" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="825.0" layoutY="136.0" prefHeight="200.0" prefWidth="315.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+         <children>
+            <Pane layoutX="-17.0" layoutY="163.0" prefHeight="53.0" prefWidth="347.0" style="-fx-background-color: #272262; -fx-background-radius: 10px;">
+               <children>
+                  <Button fx:id="res2" layoutX="2.0" mnemonicParsing="false" onAction="#rese2" prefHeight="51.0" prefWidth="125.0" style="-fx-background-color: #272262;" text="Réserver" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="info2" layoutX="188.0" mnemonicParsing="false" onAction="#infos2" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: #272262;" text="Plus d'info" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="255.0" layoutX="37.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/nador.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="19.0" layoutY="122.0" prefHeight="32.0" prefWidth="285.0" text="50€/Nuit                   Ville Nador">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="0.013888888992369175" blue="0.605555534362793" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="825.0" layoutY="440.0" prefHeight="200.0" prefWidth="315.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+         <children>
+            <Pane layoutX="-17.0" layoutY="163.0" prefHeight="53.0" prefWidth="347.0" style="-fx-background-color: #272262; -fx-background-radius: 10px;">
+               <children>
+                  <Button fx:id="res4" layoutX="2.0" mnemonicParsing="false" onAction="#rese4" prefHeight="51.0" prefWidth="125.0" style="-fx-background-color: #272262;" text="Réserver" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="info4" layoutX="188.0" mnemonicParsing="false" onAction="#infos4" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: #272262;" text="Plus d'info" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="255.0" layoutX="37.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/tanger.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="19.0" layoutY="122.0" prefHeight="32.0" prefWidth="285.0" text="50€/Nuit                Ville Tanger">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="0.013888888992369175" blue="0.605555534362793" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

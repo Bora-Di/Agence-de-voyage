@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #272262;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="destinations.alhoceima.info.InfoController">
+    <stylesheets>
+        <URL value="@info.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="421.0" prefHeight="550.0" prefWidth="438.0" style="-fx-background-color: #f3bd50;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/x.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8868421316146851" green="0.14944931864738464" blue="0.49356594681739807" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label layoutX="414.0" layoutY="2.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextArea editable="false" layoutX="23.0" layoutY="94.0" prefHeight="429.0" prefWidth="392.0" style="-fx-background-color: visi #f3bd50ble;" text="Voulez-vous rérserver des vacances à Al Hoceima ?&#10;Que vous soyez à la recherche de vacances romantiques,&#10;d'un voyage en famille ou jouir de vos vacances.. .&#10;Tout les choix sont disponible sur RifVoyage &#10;en facilitant la préparation de votre escapade et p&#10;réservant votre budget.&#10;&#10;Les budget sont répartis comme suit : &#10;&#10;Chambre Individuelle                                    : 50.00$&#10;Chambre double(Un lit pour 2 personnes)    : 60.00$ &#10;Chambre double (2 lits pour 2 personnes)    : 70.00$&#10; &#10;Pour un mémorable voyage notre agence vous présente &#10;les hotêls suivants :&#10;Al Hoceima Bay qui est situé à 3 minutes à pied de la &#10;plage Sfiha à Ajdir et à 10 minutes de route de l&#10;'aéroport Al Hoceima - Cherif Al Idrissi. &#10;Mercure : Situé à moins d'une minute à pied de la&#10; plage  de Quemado,&#10;Hôtel la Perla : Situé en plein cœur de la ville d'Alhoceima&#10;Les hôtels d'Al hoceima sont de très bon rapport qualité &#10;prix, accueillants, propre avec des mesures d'hygiène &#10;bien respectées. Des plats délicieux et les plus connu &#10;dans Alhoceima pour toute une journée seront inclus &#10;dans votre budget, c'est pas seulement ceci, mais notre &#10;équipe va vous offrir un tour inoubliable  à un endroi  &#10;de votre choix parmi les desux suivants : &#10;Une croisère dans la mer d'une  duree d'1h  pour &#10;découvrir les des îles fascinantes avec un guide &#10;professionnel .&#10; &#10;Un tour dans les quartiers voisins d'Al Hoceima pour &#10;en savoir plus sur la culture de la région, accompagné &#10;biensur d'un guide d'une pratique explication.">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="47.0" layoutY="26.0" prefHeight="45.0" prefWidth="367.0" text="Séjours vacances - Al Hoceima">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="220.0" fitWidth="367.0" layoutX="25.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/alhoceimap.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="179.0" layoutX="25.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/hotel-basilic.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="179.0" layoutX="25.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/hotel-basilic%20(3).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="179.0" layoutX="224.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/hotel-basilic%20(2).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="179.0" layoutX="224.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/hotel-basilic%20(1).jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #272262;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aboutus.AboutusController">
+    <stylesheets>
+        <URL value="@aboutus.css" />
+    </stylesheets>
+   <children>
+      <TextArea editable="false" layoutX="41.0" layoutY="125.0" prefHeight="386.0" prefWidth="491.0" style="-fx-background-color: #f3bd50;" text="   Rifvoyage est une agence de voyages couvrant une large &#10;gamme de destinations à travers le Rif région. Nous &#10;proposons des produits packagés comme des séjours avec&#10;ou sans transport, croisières avec ou sans transport, &#10;voyages individuels. Vous pouvez consulter toute notre &#10;collection de voyages organisés vers plus de 3 destinations&#10;,réservez en ligne votre voyage orgnisé choisi. vous pouvez&#10;payez votre voyage en toute sécurité par Paypal.&#10;&#10;Nos conseillers sont spécialement formés pour répondre &#10;à vos envies de séjours, circuits, croisières, week-end ou &#10;à la carte, tout en respectant votre budget ! Vous pouvez &#10;les contacter par l'adresse email : rifvoyage@gmail.com.&#10;Si vous préférez vous rendre en agence de voyages, &#10;il suffit de choisir parmi notre réseau de 4 Agences:&#10;Al-Hoceima, Rabat, Agadir et Dakhla.&#10;Bienvenu chez notre agence la plus proche de chez vous .&#10;Prix TTC, à partir de, par personne en base chambre &#10;double, selon dates et villes de départ, hors surcharge &#10;carburant et hors frais de dossier. Prix et promotions dans &#10;la limite des stocks disponibles.&#10;© 2021 RifVoyage LLC Tous droits réservés.">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="178.0" layoutY="34.0" prefHeight="43.0" prefWidth="246.0" text="À propos" textFill="#ffb512">
+         <font>
+            <Font name="Bauhaus 93" size="52.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="572.0" prefHeight="550.0" prefWidth="277.0" style="-fx-background-color: #f3bd50;">
+         <children>
+            <ImageView fitHeight="320.0" fitWidth="231.0" layoutX="23.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bag3.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="45.0" layoutY="88.0" prefHeight="96.0" prefWidth="200.0" style="-fx-background-color: #272262; -fx-background-radius: 10px;">
+               <children>
+                  <Label layoutX="7.0" layoutY="21.0" prefHeight="43.0" prefWidth="187.0" text="RifVoyage" textFill="#ffb512">
+                     <font>
+                        <Font name="Bauhaus 93" size="40.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6657894849777222" green="0.030823586508631706" blue="0.35888928174972534" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="236.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/x.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.928947389125824" green="0.14278265833854675" blue="0.8503308892250061" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label layoutX="247.0" layoutY="1.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

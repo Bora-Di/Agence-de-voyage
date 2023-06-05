@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #272262;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="destinations.tanger.info.InfoController">
+    <stylesheets>
+        <URL value="@info.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="421.0" prefHeight="550.0" prefWidth="438.0" style="-fx-background-color: #f3bd50;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/x.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8868421316146851" green="0.14944931864738464" blue="0.49356594681739807" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label layoutX="414.0" layoutY="2.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextArea editable="false" layoutX="23.0" layoutY="93.0" prefHeight="429.0" prefWidth="392.0" style="-fx-background-color: visi #f3bd50ble;" text="Voulez-vous rérserver des vacances à Tanger ?&#10;Que vous soyez à la recherche de vacances romantiques, &#10;d'un voyage en famille ou jouir de vos vacances.. .&#10;Tout les choix sont disponible sur RifVoyage en &#10;facilitant la préparation de votre escapade et&#10; préservant votre budget.&#10;&#10;Les budget sont répartis comme suit : &#10;&#10;Chambre Individuelle                                    : 50.00$&#10;Chambre double(Un lit pour 2 personnes)    : 60.00$ &#10;Chambre double (2 lits pour 2 personnes)    : 70.00$&#10; &#10;Pour un mémorable voyage notre agence vous &#10;présente les hotêls suivants :&#10; Hotel El Minzah Offrant un grand confort et un&#10; excellent rapport qualité-prix, il propose un cadre &#10;un romantique et un large éventail de services &#10;conçus pour les voyageurs comme vous.&#10;Situé à proximité des monuments les plus célèbres &#10;de Tanger (Tanja), comme Terrasse des Paresseux &#10;(0,1 km) et Place du Grand 9 Avril 1947 (0,3 km),&#10; l'El Minzah Hotel est une destination idéale pour &#10;les touristes. &#10;Hotel Palais Du Calife Resorts :Réputé pour son cadre&#10; de luxe et sa proximité de grands restaurants et &#10;attractions, l'Hotel Palais Du Calife Resorts &amp; Spa&#10; vous permet de profiter pleinement de ce que&#10; Tanger (Tanja) a de mieux à offrir.&#10;Bayt Alice : Excellent choix pour les voyageurs &#10;visitant Tanger (Tanja), le Bayt Alice offre un cadre&#10; de charme et de nombreux services conçus pour &#10;sublimer votre séjour.&#10;Les hôtels de tanger son de très bon rapport &#10;qualité prix, accueillants, propre avec des mesures &#10;d'hygiène bien respectées. Des plats délicieux et &#10;les plus connu dans Tanger pour toute une journée &#10;seront inclus dans votre budget, c'est pas seulement &#10;ceci, mais notre équipe va vous offrir un tour &#10;inoubliable  à un endroit  de votre choix parmi &#10;les deux suivants : &#10;Une croisère dans la mer d'une  duree d'1h  pour &#10;découvrir les des îles fascinantes avec un guide &#10;professionnel .&#10; &#10;Une visite pour les grottes d’Hercule : Un site &#10;archéologique rempli de mystère, font certainement&#10; partie des endroits les plus beaux et le plus &#10;énigmatiques du Maroc, beaucoup d’histoire &#10;romancé sur ce lieux.&#10;Il s'agit de grottes naturelles calcaires ouvertes sur &#10;la mer, dans lesquelles cette dernière pénètre à &#10;marée haute., vous pourrez y faire des photos &#10;superbes.&#10;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="47.0" layoutY="26.0" prefHeight="45.0" prefWidth="367.0" text="      Séjours vacances - Tanger">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="220.0" fitWidth="367.0" layoutX="25.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/tangermap.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="168.0" layoutX="25.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/5c733c51d58cf2832cdd8be004ca4160.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="179.0" layoutX="25.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/64d8e7dd6a56fa886862eb4d3d7456a4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="168.0" layoutX="224.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/2808d5785c36a76d16aac419b9c6792b.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="188.0" layoutX="224.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/d71700e95ad7b9989055fd0e46ddc0ee.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

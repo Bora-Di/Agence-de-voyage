@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #272262;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="setting.SettingController">
+    <stylesheets>
+        <URL value="@setting.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="582.0" prefHeight="550.0" prefWidth="277.0" style="-fx-background-color: #f3bd50;">
+         <children>
+            <ImageView fitHeight="320.0" fitWidth="231.0" layoutX="23.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bag5.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="39.0" layoutY="92.0" prefHeight="96.0" prefWidth="200.0" style="-fx-background-color: #272262; -fx-background-radius: 10px;">
+               <children>
+                  <Label layoutX="7.0" layoutY="21.0" prefHeight="44.0" prefWidth="192.0" text="RifVoyage" textFill="#ffb512">
+                     <font>
+                        <Font name="Bauhaus 93" size="39.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6657894849777222" green="0.030823586508631706" blue="0.35888928174972534" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="236.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/x.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.928947389125824" green="0.14278265833854675" blue="0.8503308892250061" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label layoutX="247.0" layoutY="1.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="message" layoutX="53.0" layoutY="450.0" prefHeight="44.0" prefWidth="172.0" textAlignment="CENTER" textFill="#ff1e5a">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="65.0" layoutY="23.0" prefHeight="59.0" prefWidth="458.0" text="Paramètre du compte" textFill="#ffb512">
+         <font>
+            <Font name="Bauhaus 93" size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="139.0" prefHeight="59.0" prefWidth="231.0" text="Username :" textFill="#ffb512">
+         <font>
+            <Font name="Bauhaus 93" size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="user" layoutX="321.0" layoutY="139.0" prefHeight="59.0" prefWidth="231.0" textFill="#ffb512">
+         <font>
+            <Font name="Bauhaus 93" size="47.0" />
+         </font>
+      </Label>
+      <Button fx:id="update" layoutX="247.0" layoutY="302.0" mnemonicParsing="false" onAction="#actionupdate" prefHeight="59.0" prefWidth="255.0" />
+   </children>
+</AnchorPane>

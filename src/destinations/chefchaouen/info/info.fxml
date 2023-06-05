@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #272262;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="destinations.chefchaouen.info.InfoController">
+    <stylesheets>
+        <URL value="@info.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="421.0" prefHeight="550.0" prefWidth="438.0" style="-fx-background-color: #f3bd50;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/x.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8868421316146851" green="0.14944931864738464" blue="0.49356594681739807" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label layoutX="414.0" layoutY="2.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextArea editable="false" layoutX="23.0" layoutY="93.0" prefHeight="429.0" prefWidth="392.0" style="-fx-background-color: visi #f3bd50ble;" text="Voulez-vous rérserver des vacances à Chefchaouen ?&#10;Que vous soyez à la recherche de vacances &#10;romantiques,d'un voyage en famille ou jouir de vos&#10; vacances .. .&#10;Tout les choix sont disponible sur RifVoyage en &#10;facilitant la préparation de votre escapade et &#10;préservant votre budget.&#10;&#10;Les budget sont répartis comme suit : &#10;&#10;Chambre Individuelle                                    : 50.00$&#10;Chambre double(Un lit pour 2 personnes)    : 60.00$ &#10;Chambre double (2 lits pour 2 personnes)    : 70.00$&#10; &#10;Pour un mémorable voyage notre agence vous &#10;présente les hotêls suivants :&#10; Dar Echchaouen : Si vous recherchez un hôtel &#10;familial à Chefchaouen, alors le Dar Echchaouen&#10; est le choix idéal.&#10;Grâce à son emplacement tout près de Grand &#10;Mosque (0,5 km), les clients du Dar Echchaouen &#10;pourront facilement profiter d'une des attractions&#10; les plus célèbres de Chefchaouen.&#10;Hotel Casa Perleta : Découvrez pourquoi le Casa&#10; Perleta est l'hôtel préféré des voyageurs visitant &#10;Chefchaouen. Mélange idéal entre rapport qualité/&#10;prix et confort, il offre un cadre historique avec une&#10; gamme de services conçus pour les voyageurs &#10;comme vous.&#10;&#10;Hôtel Atlas Chefchaouen : Niché au sommet d'une&#10; colline, à Chefchaouen, l'Atlas Chaouen propose &#10;des chambres avec balcon et vue sur la médina ou&#10; les montagnes ainsi qu'une piscine extérieure.&#10;Les hôtels de Chefchaouen son de très bon rapport&#10; qualité prix, accueillants, propre avec des mesures&#10; d'hygiène bien respectées. Des plats délicieux et&#10; les plus connu dans Chafchaouen pour toute une&#10; journée seront inclus dans votre budget, c'est pas&#10; seulement ceci, mais notre équipe va vous offrir &#10;un tour inoubliable  à un endroit  de votre choix &#10;parmi les deux suivants : &#10;Une croisère dans la mer d'une  duree d'1h  avec &#10;un guide professionnel .&#10;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="47.0" layoutY="26.0" prefHeight="45.0" prefWidth="367.0" text="Séjours vacances - chefchaouen">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="220.0" fitWidth="367.0" layoutX="25.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/chefchouanmap.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="179.0" layoutX="25.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/31.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="179.0" layoutX="25.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/bigstock-Chefchaouen-A-City-With-Blue-309220033.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="179.0" layoutX="224.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/img1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="168.0" layoutX="224.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/images.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
