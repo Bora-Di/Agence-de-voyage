@@ -83,9 +83,9 @@ public class ForgetpasswordController implements Initializable {
       
     
     String to = email.getText();
-    String host = "smtp.gmail.com";
-    String from = "rifvoyage@gmail.com";
-    String pass="Rif-V-03";
+    String host = "smtp.gmail.com"; 
+    String from = "*******@gmail.com";//email of admin
+    String pass="*******";// pwd email
     String subject="Récupérer le mot de passe";
     String message ="votre mot de passe : "  +   rs.getString("password") +"\n"
             + "Si vous avez une question, contactez-nous, nous sommes au service de nos clients ! " ;
